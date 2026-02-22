@@ -1,5 +1,5 @@
 name                     = "mymodulestorageacct"
-resource_group_name      = "rg-demo"
+resource_group_name      = "MK-RG-SA-1"
 location                 = "East US"
 account_tier             = "Standard"
 account_replication_type = "LRS"
