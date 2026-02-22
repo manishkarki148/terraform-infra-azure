@@ -35,6 +35,7 @@ jobs:
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}        # GitHub secret for tenant ID
           #subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }} # optional if needed
           allow-no-subscriptions: true
+          use_oidc: true
           #enable-oidc: true
 
       # Initialize Terraform
