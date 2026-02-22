@@ -33,9 +33,9 @@ jobs:
         with:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}        # GitHub secret for App Registration client ID
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}        # GitHub secret for tenant ID
-          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }} # optional if needed
+          #subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }} # optional if needed
           allow-no-subscriptions: true
-          enable-oidc: true
+          #enable-oidc: true
 
       # Initialize Terraform
       - name: Terraform Init
