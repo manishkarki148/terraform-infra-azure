@@ -64,6 +64,7 @@ jobs:
         run: terraform plan -out=tfplan
         working-directory: ./${{ github.event.inputs.tf_directory }}
 
+/*
       # Apply (only if manual trigger)
       - name: Terraform Apply
         env:
@@ -73,3 +74,4 @@ jobs:
           ARM_USE_OIDC: "true"
         run: terraform apply -auto-approve tfplan
         working-directory: ./${{ github.event.inputs.tf_directory }}
+*/
