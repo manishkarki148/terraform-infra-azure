@@ -24,3 +24,13 @@ variable "account_replication_type" {
   type        = string
   default     = "LRS"
 }
+
+variable "subscription_1" {
+  description = "Azure Subscription 1"
+  type        = string
+}
+
+variable "subscription_2" {
+  description = "Azure Subscription 2"
+  type        = string
+}
