@@ -15,3 +15,15 @@ provider "azurerm" {
   #use_oidc = true
   #cli_auth = false
 }
+
+provider "azurerm" {
+  alias = "subscription_1"
+  features {}
+  subscription_id = var.subscription_1
+}
+
+provider "azurerm" {
+  alias           = "subscription_2"
+  features        {}
+  subscription_id = var.subscription_2
+}
