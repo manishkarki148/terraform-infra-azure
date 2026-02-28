@@ -65,7 +65,7 @@ jobs:
           ARM_USE_OIDC: "true"
           TF_VAR_subscription_1: ${{ secrets.AZURE_SUBSCRIPTION_ID_1 }}
           TF_VAR_subscription_2: ${{ secrets.AZURE_SUBSCRIPTION_ID_2 }}
-        run: terraform plan -out=tfplan
+        run: terraform plan -out=tfplan -lock=false
         working-directory: ./${{ github.event.inputs.tf_directory }}
 
 
